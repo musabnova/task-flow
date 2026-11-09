@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TaskFlow</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="app">
+        <header class="header">
+            <h1>TaskFlow</h1>
+            <p>Plan your day and keep track of what matters.</p>
+        </header>
+
+        <form class="task-form" id="taskForm">
+            <label class="visually-hidden" for="taskInput">Task</label>
+            <input
+                type="text"
+                id="taskInput"
+                name="task"
+                placeholder="Enter a task"
+                autocomplete="off"
+            >
+            <button type="button" id="addTaskButton">Add Task</button>
+        </form>
+
+        <section class="task-section" aria-labelledby="task-section-title">
+            <h2 id="task-section-title">Your tasks</h2>
+            <div class="task-list" id="taskList">
+                <p class="empty-message">No tasks yet. Add one to get started.</p>
+            </div>
+        </section>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
